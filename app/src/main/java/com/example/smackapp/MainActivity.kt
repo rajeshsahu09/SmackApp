@@ -2,6 +2,7 @@ package com.example.smackapp
 
 import android.os.Bundle
 import android.view.Menu
+import android.view.View
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
@@ -26,12 +27,17 @@ class MainActivity : AppCompatActivity() {
 
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
         val navView: NavigationView = findViewById(R.id.nav_view)
-        val navController = findNavController(R.id.nav_host_fragment)
     }
 
+    fun onLoginClickNavHeader(view: View) {
 
-    override fun onSupportNavigateUp(): Boolean {
-        val navController = findNavController(R.id.nav_host_fragment)
-        return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
+    }
+
+    fun onChannelBtnNavHeader(view: View) {
+
+    }
+
+    fun onSendMsgBtnClick(view: View) {
+
     }
 }

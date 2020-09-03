@@ -10,38 +10,67 @@
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/userpic_navheader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
+        android:layout_marginBottom="16dp"
         android:contentDescription="@string/nav_header_desc"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/logout_navheader"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/profiledefault" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/username_navheader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
         android:text="Rajesh Sahu"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/userpic_navheader"
+        app:layout_constraintTop_toTopOf="@+id/userpic_navheader"
         tools:text="Rajesh Sahu" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/useremail_navheader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="@rajeshsahu"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        tools:text="@rajeshsahu" />
+        android:text="rajeshsahu@gmail.com"
+        app:layout_constraintBottom_toBottomOf="@+id/userpic_navheader"
+        app:layout_constraintStart_toEndOf="@+id/userpic_navheader"
+        app:layout_constraintTop_toBottomOf="@+id/username_navheader"
+        tools:text="rajeshsahu@gmail.com" />
+
+    <Button
+        android:id="@+id/logout_navheader"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/transparent"
+        android:onClick="onLoginClickNavHeader"
+        android:text="LOGIN"
+        android:textAlignment="textStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="LOGIN" />
+
+    <ImageButton
+        android:id="@+id/add_channel_navheader"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/transparent"
+        android:onClick="onChannelBtnNavHeader"
+        android:padding="7dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/addchannelbutton" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
