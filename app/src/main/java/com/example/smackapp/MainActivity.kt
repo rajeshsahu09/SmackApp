@@ -1,5 +1,6 @@
 package com.example.smackapp
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.View
@@ -30,7 +31,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun onLoginClickNavHeader(view: View) {
-
+        val loginIntent = Intent(this, LoginActivity::class.java) // explicit intent
+        startActivity((loginIntent))
     }
 
     fun onChannelBtnNavHeader(view: View) {
