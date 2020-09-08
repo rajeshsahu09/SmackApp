@@ -1,12 +1,11 @@
-package com.example.smackapp
+package com.example.smackapp.controller
 
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.ImageView
+import com.example.smackapp.R
 import kotlinx.android.synthetic.main.activity_create_user.*
-import kotlin.random.Random
 
 class CreateUserActivity : AppCompatActivity() {
 

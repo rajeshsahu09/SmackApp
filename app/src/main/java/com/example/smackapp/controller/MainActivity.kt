@@ -1,4 +1,4 @@
-package com.example.smackapp
+package com.example.smackapp.controller
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,6 +8,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import com.example.smackapp.R
 
 class MainActivity : AppCompatActivity() {
 
