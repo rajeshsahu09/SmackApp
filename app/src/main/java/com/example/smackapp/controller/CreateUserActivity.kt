@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.example.smackapp.R
+import com.example.smackapp.services.AuthService
 import kotlinx.android.synthetic.main.activity_create_user.*
 
 class CreateUserActivity : AppCompatActivity() {
@@ -48,6 +49,11 @@ class CreateUserActivity : AppCompatActivity() {
     }
 
     fun onClickCreateUser(view: View) {
+        println("here")
+        AuthService.regesterUser(this, "j@j.com", "123456", ) {complete ->
+            if(complete) {
 
+            }
+        }
     }
 }
